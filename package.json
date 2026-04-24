@@ -1,7 +1,8 @@
 {
-  "name": "vite-react-typescript-starter",
-  "private": true,
-  "version": "0.0.0",
+  "name": "tienda.com",
+  "description": "Tienda en línea - Nahuel Benítez | Desarrollo Web",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
