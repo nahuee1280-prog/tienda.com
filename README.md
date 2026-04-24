@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# 🛍️ Tienda.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una tienda en línea moderna desarrollada con **React**, **TypeScript** y **Vite**.
 
-Currently, two official plugins are available:
+**Desarrollado por:** [Nahuel Benítez](https://github.com/nahuee1280-prog) - Desarrollo Web
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ **Vite** - Build tool ultra rápido
+- ⚛️ **React 19** - Última versión de React
+- 🎯 **TypeScript** - Tipado estático para mayor seguridad
+- 🧹 **ESLint** - Linting automático de código
+- 🔥 **HMR** - Hot Module Replacement para desarrollo ágil
+- 📱 **Responsive** - Diseño adaptable a todos los dispositivos
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Primeros Pasos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Requisitos
+- Node.js >= 18
+- npm o yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Instalación
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clonar el repositorio
+git clone https://github.com/nahuee1280-prog/tienda.com.git
+cd tienda.com
+
+# Instalar dependencias
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Desarrollo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Abre [http://localhost:5173](http://localhost:5173) en tu navegador para ver la aplicación.
+
+### Construcción
+
+```bash
+npm run build
+```
+
+Genera los archivos optimizados en la carpeta `dist`.
+
+### Vista Previa
+
+```bash
+npm run preview
+```
+
+Visualiza la build localmente antes de desplegar.
+
+### Linting
+
+```bash
+npm run lint
+```
+
+Valida el código y reporta problemas.
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+tienda.com/
+├── src/              # Código fuente
+│   ├── components/   # Componentes React reutilizables
+│   ├── pages/        # Páginas principales
+│   ├── App.tsx       # Componente raíz
+│   └── main.tsx      # Entrada de la aplicación
+├── public/           # Archivos estáticos
+├── index.html        # HTML base
+├── vite.config.ts    # Configuración de Vite
+├── tsconfig.json     # Configuración de TypeScript
+└── package.json      # Dependencias del proyecto
+```
+
+---
+
+## 🛠️ Tecnologías
+
+- **React** 19 - Librería UI
+- **TypeScript** - Lenguaje tipado
+- **Vite** - Build tool
+- **ESLint** - Linting
+- **React Hooks** - Gestión de estado
+
+---
+
+## 📝 Plugins
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react) - Integración oficial de React con Vite
+
+---
+
+## 📄 Licencia
+
+Este proyecto está disponible bajo licencia abierta.
+
+---
+
+## 📧 Contacto
+
+**Nahuel Benítez**  
+📍 GitHub: [@nahuee1280-prog](https://github.com/nahuee1280-prog)  
+💼 Desarrollo Web
